@@ -7,7 +7,7 @@
   --color-primary: #a9162a;
   --color-secondary: #bd9c0f;
   --color-primary-light: #f8eee0;
-  --color-primary-shadow: rgb(192,122,34, 0.4);
+  --color-primary-shadow: rgb(189,156,15, 0.4);
   --color-primary-shadow-light: rgb(192,122,34, 0.1);
 
   --size-xxs: 0.5rem;
@@ -80,8 +80,8 @@ body[data-theme='light'] {
   --color-slate-400: #1e293b;
   --color-slate-600: #1e293b;
   --color-slate-800: #1e293b;
-  --color-primary-shadow: rgb(192,122,34, 0.4);
-  --color-primary-shadow-light: rgb(192,122,34, 0.4); 
+  --color-primary-shadow: rgb(30,41,59, 0.4);
+  --color-primary-shadow-light: rgb(30,41,59, 0.1); 
 }
 
 /* Scrollbar */

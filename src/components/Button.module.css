@@ -16,7 +16,8 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* If trnsform does not affects position, wrap btn in a background to avoid doom flicker*/
+/* If transform is not included and position is not affected,
+ wrap btn in a background to avoid doom flicker*/
 .btn:hover {
     transition: transform 125ms;
     transform: translateY(-3px);
