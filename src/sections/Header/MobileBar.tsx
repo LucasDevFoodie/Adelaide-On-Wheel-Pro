@@ -1,6 +1,5 @@
 import { MouseEventHandler, useCallback, useRef, useState } from "react";
 import { Button } from "../../components/Button";
-import Links from "../../data/sections";
 import styles from "./MobileBar.module.css";
 
 const MobileBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler }) => {
@@ -50,12 +49,12 @@ const MobileBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler
                 {isOpen &&
                     <nav >
                         <ul className={styles.menu}>
-                            {Links.map(link => (
+                            {/* {Links.map(link => (
                                 <li key={link.id}>
                                     <a className={styles.link} href={link.href} onClick={handleMenuClick}>{link.name}</a>
                                 </li>
                             ))
-                            }
+                            } */}
                             <li className={styles.linkLine}></li>
                             <li>
                                 <Button ariaLabel='theme toggle button'

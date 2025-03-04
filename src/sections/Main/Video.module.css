@@ -1,0 +1,13 @@
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 0; /* Override container padding */
+    padding-right: 0;    
+}
+
+.video {
+    height: auto;
+    width: 100%;
+    max-height: 640px;
+}

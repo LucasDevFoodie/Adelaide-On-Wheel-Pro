@@ -3,7 +3,7 @@ import { Text, Button } from '../../components';
 
 export const Contact = () => {
     return (
-        <section id="contact" className={`${styles.contact} container section`}>
+        <section className={`${styles.contact} container section`}>
             <h2 className={styles.title}>Let's talk business</h2>
             <Text>Whether you are starting a project, have business
                 inquiries or just want to say hi, inbox is always open so feel free to reach out and

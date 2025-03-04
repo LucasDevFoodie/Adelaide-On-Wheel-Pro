@@ -1,6 +1,5 @@
 import styles from './WebBar.module.css'
 import { Button } from '../../components/Button'
-import Links from '../../data/sections';
 import { MouseEventHandler } from 'react';
 
 const WebBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler }) => {
@@ -8,12 +7,12 @@ const WebBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler })
         <header className={`${styles.header} container`}>
             <nav>
                 <ul className={styles.menu}>
-                    {Links.map(link => (
+                    {/* {Links.map(link => (
                         <li key={link.id}>
                             <a className={styles.link} href={link.href}>{link.name}</a>
                         </li>
                     ))
-                    }
+                    } */}
                     <li className={styles.line}></li>
                     <li>
                         <Button ariaLabel='theme toggle button'

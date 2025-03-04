@@ -1,6 +1,6 @@
 import { Hero } from "./Hero";
-import { About } from "./About";
-import { Featured } from "./Featured";
+import { Video } from "./Video";
+import { School } from "./School";
 import { Work } from "./Work";
 import { Contact } from "./Contact";
 
@@ -8,8 +8,8 @@ export const Main = () => {
     return(
         <main>
             <Hero></Hero>
-            <About></About>
-            <Featured></Featured>
+            <Video></Video>
+            <School></School>
             <Work></Work>
             <Contact></Contact>
         </main>

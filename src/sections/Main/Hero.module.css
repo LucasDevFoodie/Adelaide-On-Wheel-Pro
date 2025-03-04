@@ -52,7 +52,6 @@
 
 .description {
     opacity: 0;
-    color: var(--color-slate-400);
     animation: fade-in var(--intro-title-line) ease-in forwards;
     animation-delay: calc(var(--intro-image) + var(--intro-title-line));
 }

@@ -1,7 +1,7 @@
 .text {
     max-width: 60ch; /* 1ch equal to the width of the "0" character of the font type (aim to 20% more)*/
     font-size: var(--size-sm);
-    color: var(--color-slate-600);
+    color: var(--color-slate-400);
     margin: 1rem 0;
 }
 
