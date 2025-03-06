@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <footer className={`${styles.footer} container section`}>
             <div className={styles.wrapper}>
-                <h3 className={styles.label}>Follow us on</h3>
+                {/* <h3 className={styles.label}>Follow us on</h3>
                 <div className={styles.logos}>
                     <a className={styles.img} href="https://www.facebook.com/camilosabee" target="_blank">
                         <Image lazyLoading={true} src={Images.facebook} alt="facebook logo" />                        
@@ -14,7 +14,7 @@ export const Footer = () => {
                     <a className={styles.img} href="https://www.instagram.com/adelaideonwheels/" target="_blank">
                     <Image lazyLoading={true} src={Images.instagram} alt="instagram logo" />
                     </a>
-                </div>
+                </div> */}
                 <h4 className={styles.copyright}>
                     <a className={styles.img} href="https://www.linkedin.com/in/lucas-atala-99547a307" target="_blank">
                        Developed by <strong> @ Lukesky</strong>

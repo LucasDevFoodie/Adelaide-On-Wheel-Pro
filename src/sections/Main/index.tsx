@@ -1,17 +1,19 @@
 import { Hero } from "./Hero";
 import { Video } from "./Video";
 import { School } from "./School";
-import { Work } from "./Work";
-import { Contact } from "./Contact";
+import { Shop } from "./Shop";
+import { Label } from "../../components/Label";
 
 export const Main = () => {
     return(
         <main>
             <Hero></Hero>
-            <Video></Video>
+            <Video></Video>            
+            <Label>
             <School></School>
-            <Work></Work>
-            <Contact></Contact>
+            <Shop></Shop>
+            </Label>
+            
         </main>
     )
 }
