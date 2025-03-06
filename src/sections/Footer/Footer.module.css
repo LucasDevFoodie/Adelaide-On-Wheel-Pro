@@ -1,27 +1,14 @@
 .footer {
     margin-bottom: 1em;
     font-size: var(--size-xs);
-}
-
-.label {
-    font-weight: 400;
-    color: var(--color-slate-600);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    user-select: none;
+    margin-top: 4rem;
+    opacity: .5;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-
-.logos {
-    display: flex;
-    gap: 1em
 }
 
 .img {

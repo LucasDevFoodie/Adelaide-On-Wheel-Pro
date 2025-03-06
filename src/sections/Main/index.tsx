@@ -12,8 +12,7 @@ export const Main = () => {
             <Label>
             <School></School>
             <Shop></Shop>
-            </Label>
-            
+            </Label>            
         </main>
     )
 }

@@ -14,6 +14,19 @@
     color: var(--color-light);
 }
 
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imgContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 /* xs */
 @media (min-width: 475px) {
     .contact {
@@ -23,6 +36,11 @@
     .title {
         font-size: var(--size-3xl);
     }   
+
+    .imgContainer {
+        margin-top: 1.5rem;
+        flex-direction: row;
+    }
 }
 
 
@@ -43,4 +61,9 @@
     .title {
         font-size: var(--size-5xl);
     }   
+
+    .imgContainer {
+        margin-top: 2rem;
+        gap: 2rem;
+    }
 }
