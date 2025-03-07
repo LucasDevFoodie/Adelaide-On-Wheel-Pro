@@ -1,6 +1,7 @@
 import { MouseEventHandler, useCallback, useRef, useState } from "react";
 import { Button } from "../../components/Button";
 import styles from "./MobileBar.module.css";
+import { RoutingItem } from "./RoutingItems";
 
 const MobileBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,12 +50,10 @@ const MobileBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler
                 {isOpen &&
                     <nav >
                         <ul className={styles.menu}>
-                            {/* {Links.map(link => (
-                                <li key={link.id}>
-                                    <a className={styles.link} href={link.href} onClick={handleMenuClick}>{link.name}</a>
-                                </li>
-                            ))
-                            } */}
+                            <RoutingItem onClick={(e) => {
+                                        e.stopPropagation()
+                                        handleMenuClick()
+                                    }}/>
                             <li className={styles.linkLine}></li>
                             <li>
                                 <Button ariaLabel='theme toggle button'

@@ -1,15 +1,14 @@
 import styles from './WebBar.module.css'
 import { Button } from '../../components/Button'
 import { MouseEventHandler } from 'react';
-import { Path } from 'react-router-dom';
+import { RoutingItem } from './RoutingItems';
 
 const WebBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler }) => {
-    
     return (
         <header className={`${styles.header} container`}>
             <nav>
                 <ul className={styles.menu}>
-
+                    <RoutingItem />
                     <li className={styles.line}></li>
                     <li>
                         <Button ariaLabel='theme toggle button'
