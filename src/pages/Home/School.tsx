@@ -1,5 +1,5 @@
 import { Button, Text, Image } from '../../components';
-import { Images } from '../../assets/Images';
+import { Images } from '../../assets/images/Images';
 
 import styles from './School.module.css';
 

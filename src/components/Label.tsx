@@ -1,4 +1,4 @@
-import { Images } from '../assets/Images';
+import { Images } from '../assets/images/Images';
 import { Image, Text } from '../components'
 import styles from './Label.module.css';
 

@@ -1,13 +1,13 @@
-import { Main } from '../sections/Main' 
-import { School } from '../sections/School'
-import { Shop } from '../sections/Shop'
-import { NotFound } from '../sections/Status/NotFound'
+import { Home } from '../pages/Home' 
+import { School } from '../pages/School'
+import { Shop } from '../pages/Shop'
+import { NotFound } from '../pages/Status/NotFound'
 import { RouteObject } from 'react-router-dom'
 
 export const ROUTES = {
     Home: {
         path: '/',
-        element: <Main />,
+        element: <Home />,
         label: 'Home',
     },
     School: {
@@ -24,16 +24,11 @@ export const ROUTES = {
         path: '*',
         element: <NotFound />,
     }
-}
-
-
-
+};
 
  export const RoutesParams: RouteObject[] = Object.entries(ROUTES).map(([,value]) => {
     return {
         path: value.path,
         element: value.element
     }
- }) 
- 
- 
+ });

@@ -1,5 +1,5 @@
 import styles from './Video.module.css'
-import { Videos } from "../../assets/Videos"
+import { Videos } from "../../assets/videos/Videos"
 
 export const Video = () => {
     return (

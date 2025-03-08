@@ -20,16 +20,8 @@
 .copyright {
     font-size: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .copyright > a {
     text-decoration: overline;
 }
-
-/* lg */
-@media (min-width: 1024px) {
-    .footer {
-        font-size: var(--size-base);
-    }
-}    

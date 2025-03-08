@@ -1,4 +1,4 @@
-.contact {
+.shop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
 
 /* xs */
 @media (min-width: 475px) {
-    .contact {
+    .shop {
         gap: 1.5rem;
     }
     
@@ -54,7 +54,7 @@
 
 /* xl */
 @media (min-width: 1280px) {
-    .contact {
+    .shop {
         gap: 2rem;
     }
     

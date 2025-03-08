@@ -4,7 +4,7 @@ import { School } from "./School";
 import { Shop } from "./Shop";
 import { Label } from "../../components/Label";
 
-export const Main = () => {
+export const Home = () => {
     return(
         <main>
             <Hero></Hero>
