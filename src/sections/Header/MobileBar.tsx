@@ -1,5 +1,5 @@
 import { MouseEventHandler, useCallback, useRef, useState } from "react";
-import { Button } from "../../components/Button";
+import { Button } from "../../components";
 import styles from "./MobileBar.module.css";
 import { RoutingItem } from "./RoutingItems";
 

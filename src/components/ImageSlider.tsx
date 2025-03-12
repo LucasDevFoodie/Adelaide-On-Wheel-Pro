@@ -30,11 +30,17 @@ export const ImageSlider = ({ images, iconSwipe = false }: ProductSliderProps) =
 
     const handleTouchEnd = () => {
         const swipeThreshold = 50; //Minimun swipe distance to trigger action
-        if (touchStartX - touchEndX > swipeThreshold) {
-            goToNext();
-        } else if (touchEndX - touchStartX > swipeThreshold) {
-            goToPrev();
+
+        if (touchEndX != 0) // Equals to a click
+        {
+            if (touchStartX - touchEndX > swipeThreshold) {
+                goToNext();
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                goToPrev();
+            }
         }
+
+        setTouchEndX(0);
     }
 
     useEffect(() => {
