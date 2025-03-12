@@ -1,5 +1,5 @@
 import styles from './WebBar.module.css'
-import { Button } from '../../components/Button'
+import { Button } from '../../components'
 import { MouseEventHandler } from 'react';
 import { RoutingItem } from './RoutingItems';
 

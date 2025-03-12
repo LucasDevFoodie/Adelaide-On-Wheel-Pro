@@ -1,7 +1,6 @@
 import styles from './Shop.module.css'
-import {  Text } from '../../components'
 import { useLocation } from 'react-router-dom'
-import { ProductSlider } from '../../components/ProductSlider';
+import { Text, ImageSlider } from '../../components';
 import { Images } from '../../assets/images/Images';
 import { useCallback, useEffect } from 'react';
 
@@ -42,7 +41,7 @@ export const Shop = () => {
         {Object.entries(Images.shop).map((skate) => {
           return (
             <div key={skate[0]}  className={styles.productSlide}>
-              <ProductSlider images={Object.entries(skate[1]).map((entry) => entry[1])} iconSwipe={true}/>
+              <ImageSlider images={Object.entries(skate[1]).map((entry) => entry[1])} iconSwipe={true}/>
               <button type='button' id={skate[0]} className={styles.btn} onClick={() => handleShop(skate[0])} aria-label='Details for shopping'>Shop ❯</button> 
               <hr />
             </div>

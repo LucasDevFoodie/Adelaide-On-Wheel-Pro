@@ -21,6 +21,7 @@
 
 .sliderImage:hover {
   transform: scale(1.05);
+  cursor: zoom-in;
 }
 
 
@@ -112,12 +113,12 @@
     top: 50%;
     transform: translateY(-50%);
     background: var(--color-dark);
-    opacity: .5;
+    opacity: .4;
     color: var(--color-light);
     border: none;
     padding: 0.5rem;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 50%;
   }
 

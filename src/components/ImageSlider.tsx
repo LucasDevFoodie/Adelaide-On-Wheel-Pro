@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react"
-import styles from './ProductSlider.module.css';
-import { Button, Image } from '../components'
+import styles from './ImageSlider.module.css';
+import { Button, Image } from '.'
 import { createPortal } from "react-dom";
 import { Images } from "../assets/images/Images";
 
@@ -9,7 +9,7 @@ interface ProductSliderProps {
     iconSwipe?: boolean;
 }
 
-export const ProductSlider = ({ images, iconSwipe = false }: ProductSliderProps) => {
+export const ImageSlider = ({ images, iconSwipe = false }: ProductSliderProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [touchStartX, setTouchStartX] = useState(0);
@@ -63,7 +63,7 @@ export const ProductSlider = ({ images, iconSwipe = false }: ProductSliderProps)
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
-                <Image className={styles.sliderImage} src={images[currentIndex]} alt="cityrun skate" />
+                <Image className={styles.sliderImage} src={images[currentIndex]} alt="Image selected" />
             </div>
             {/* Interchangeable with CSS rules*/}
             {iconSwipe &&

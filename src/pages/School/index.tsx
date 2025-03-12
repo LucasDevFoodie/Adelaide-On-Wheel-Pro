@@ -1,6 +1,5 @@
 import { Images } from '../../assets/images/Images'
-import { Button, Text } from '../../components'
-import { ProductSlider } from '../../components/ProductSlider'
+import { Button, Text, ImageSlider } from '../../components'
 import styles from './School.module.css'
 
 export const School = () => {
@@ -20,7 +19,7 @@ export const School = () => {
                 our school offers professional training for you.
             </Text>
             <div className={styles.sliderContainer}>
-                <ProductSlider images={Images.school} />
+                <ImageSlider images={Images.school} />
             </div>
             <hr />
             <Text>
@@ -28,7 +27,7 @@ export const School = () => {
                 From mastering the basics to high endurance training, our sessions are designed to challenge and inspire.
             </Text>
             <div className={styles.sliderContainer}>
-                <ProductSlider images={Images.camilo} />
+                <ImageSlider images={Images.camilo} />
             </div>
             <hr />
             <h3 className={styles.subtitle}>Location</h3>
