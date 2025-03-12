@@ -1,5 +1,5 @@
 import { Images } from '../assets/images/Images';
-import { Image, Text } from '../components'
+import { Image } from '../components'
 import styles from './Label.module.css';
 
 export const Label = ({ children }: { children: React.ReactNode }) => {
