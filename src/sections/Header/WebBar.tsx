@@ -22,11 +22,13 @@ const WebBar = ({ handleThemeToggle }: { handleThemeToggle: MouseEventHandler })
                             </svg>
                         </Button>
                     </li>
+                    <li>
                     <a target="blank" href="https://wa.me/61478750264?text=Hi!,I would like to be part of the school">
                         <Button ariaLabel="download resume">
                             Contact Us
                         </Button>
                     </a>
+                    </li>
                 </ul>
             </nav>
         </header>

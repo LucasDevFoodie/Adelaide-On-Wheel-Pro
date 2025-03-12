@@ -1,6 +1,6 @@
 .text {
     max-width: 65ch; /* 1ch equal to the width of the "0" character of the font type (aim to 20% more)*/
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     color: var(--color-slate-400);
     margin: 1rem 0;
 }
@@ -8,7 +8,7 @@
 /* xs */
 @media (min-width: 475px) {
     .text {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
         margin: 1.5rem 0;
     }
 }
@@ -16,13 +16,13 @@
 /* lg */
 @media (min-width: 1024px) {
     .text {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 }
 
 @media (min-width: 1280px) {
     .text {
-        font-size: var(--size-xl); 
+        font-size: var(--size-2xl); 
         margin: 2rem 0;
     }
 }

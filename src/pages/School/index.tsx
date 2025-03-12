@@ -33,6 +33,8 @@ export const School = () => {
             <h3 className={styles.subtitle}>Location</h3>
             <div className={styles.mapContainer}>
                 <iframe className={styles.map}  
+                title='School direction'
+                name='Google maps direction'
                 loading='lazy'
                 referrerPolicy='no-referrer-when-downgrade'
                 src="https://www.google.com/maps/embed/?pb=!1m18!1m12!1m3!1d3274.098657248481!2d138.660437!3d-34.8537483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0b55a8b321593%3A0x5e5dd8c52e1f54c8!2sGilles%20Plains%20Sporting%20Complex!5e0!3m2!1sen!2sau!4v1741744311830!5m2!1sen!2sau"></iframe>

@@ -1,6 +1,6 @@
 .labelWrapper {
     position: sticky;
-    top: 80%;
+    top: 20rem;
     z-index: 10;    
     transform: rotate(-15deg);
     width: 3rem;
