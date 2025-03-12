@@ -5,10 +5,10 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
 }
 
 export const Button = (props: ButtonProps) => {
-    const {children, className = styles.btn, ariaLabel, ...rest} = props;
+    const {children, className = styles.btn, ariaLabel, type = 'button', ...rest} = props;
 
     return (
-        <button className={className} aria-label={ariaLabel} {...rest}
+        <button type={type} className={className} aria-label={ariaLabel} {...rest}
             >
             {children}
         </button>

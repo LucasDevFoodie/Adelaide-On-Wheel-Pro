@@ -1,0 +1,146 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 18rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.imageContainer {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.sliderImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.sliderImage:hover {
+  transform: scale(1.05);
+}
+
+
+.prevBtn,
+.nextBtn {
+  display: none;
+}
+
+.swipe {
+  position: absolute;
+  bottom: -1rem;
+}
+
+/* Modal Styling */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  opacity: .8;
+}
+
+.closeModal:hover {
+  opacity: 1;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 475px) {
+  .sliderContainer {
+    max-width: 26rem;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .modalContent {
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .swipe {
+    display: none;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-dark);
+    opacity: .5;
+    color: var(--color-light);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+  }
+
+  .prevBtn {
+    left: 0.5rem;
+  }
+
+  .nextBtn {
+    right: 0.5rem;
+  }
+
+  .prevBtn:hover,
+  .nextBtn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sliderContainer {
+    max-width: 26rem;
+  }
+
+  .modalContent {
+    max-width: 35rem;
+  }
+}

@@ -13,7 +13,7 @@ export interface ICardProps {
 export const Card = (props:ICardProps) => {
     return (
         <div className={styles.card}>
-            <Button ariaLabel={`inline skate ${props.name}`} onClick={props.onClick}>
+            <Button type="button" ariaLabel={`inline skate ${props.name}`} onClick={props.onClick}>
             <Image src={props.imgSrc} alt={props.name} ></Image>
             <Text>{props.name}</Text>            
             <Text>Sizes {props.sizeMin} - {props.sizeMax}</Text>            

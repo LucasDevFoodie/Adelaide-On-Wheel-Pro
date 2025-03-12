@@ -9,9 +9,8 @@
 
 .title {
     font-size: var(--size-2xl);
-    color: var(--color-ligh);
-    text-transform: capitalize;
     color: var(--color-light);
+    text-transform: capitalize;
 }
 
 .wrapper {

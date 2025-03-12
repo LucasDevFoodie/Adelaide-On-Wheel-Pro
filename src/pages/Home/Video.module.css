@@ -2,18 +2,20 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding-left: 0; /* Override container padding */
-    padding-right: 0;    
+    padding-left: 0;
+    /* Override container padding */
+    padding-right: 0;
 }
 
 .video {
     height: auto;
     width: 100%;
     max-height: 640px;
+    object-fit: scale-down;
 }
 
 @media (min-width: 1280px) {
     .video {
-        max-height: 800px;
+        max-height: 750px;
     }
 }

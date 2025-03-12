@@ -10,19 +10,13 @@ export const School = () => {
       <h3 className={styles.subtitle}>About Our School</h3>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>AOW PRO</h2>
-        <a target="_blank" href="https://developerhub.ppro.com/">
+        <a target="_blank" href="https://wa.me/61478750264?text=Hi!,I would like to be part of the school">
           <Button ariaLabel='button redirect website'>
             Reach Out
           </Button>
         </a>
       </div>
-      <Text>Welcome to our School, where fun, fitness, and community come together on wheels!
-        Whether you're a complete beginner or an experienced skater looking to refine your skills,
-        our school offers professional training for you.
-        <br />
-        Meet Camilo, our instructor that guides skaters of all levels through engaging lessons that focus on technique, confidence, and most importantly having a great time!
-        From mastering the basics to high endurance training, our sessions are designed to challenge and inspire.
-        <br />
+      <Text>
         More than just a school, we’re a global community that welcomes skaters from around the world.
         So gear up and join us in experiencing the joy of inline skating in Adelaide!
       </Text>

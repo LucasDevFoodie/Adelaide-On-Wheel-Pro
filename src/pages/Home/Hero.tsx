@@ -10,7 +10,8 @@ export const Hero = () => {
                 <h1 className={styles.title}>ADELAIDE <br />ON <br />WHEELS<br /> <span className={styles.lastTitleLine}>PRO</span></h1>
                 <Image src={Images.hero}
                     alt="inline skater turning"
-                    className={styles.img} >
+                    className={styles.img}
+                    fetchPriority="high" >
                 </Image>
             </div>
             <Text className={styles.description}>A passionate <strong>Speed Skate</strong> school specialized in
