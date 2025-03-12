@@ -9,7 +9,7 @@ interface ProductSliderProps {
     iconSwipe?: boolean;
 }
 
-export const ImageSlider = ({ images, iconSwipe = false }: ProductSliderProps) => {
+export const ImageSlider = ({ images, iconSwipe = true }: ProductSliderProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [touchStartX, setTouchStartX] = useState(0);
@@ -71,7 +71,7 @@ export const ImageSlider = ({ images, iconSwipe = false }: ProductSliderProps) =
             >
                 <Image className={styles.sliderImage} src={images[currentIndex]} alt="Image selected" />
             </div>
-            {/* Interchangeable with CSS rules*/}
+            {/* Interchangeable with CSS rules for desktop also*/}
             {iconSwipe &&
                 <Image className={styles.swipe} src={Images.swipe} alt="Swipe icon" />
             }

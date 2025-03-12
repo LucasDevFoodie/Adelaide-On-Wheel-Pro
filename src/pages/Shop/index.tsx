@@ -41,7 +41,7 @@ export const Shop = () => {
         {Object.entries(Images.shop).map((skate) => {
           return (
             <div key={skate[0]}  className={styles.productSlide}>
-              <ImageSlider images={Object.entries(skate[1]).map((entry) => entry[1])} iconSwipe={true}/>
+              <ImageSlider images={Object.entries(skate[1]).map((entry) => entry[1])} />
               <button type='button' id={skate[0]} className={styles.btn} onClick={() => handleShop(skate[0])} aria-label='Details for shopping'>Shop ❯</button> 
               <hr />
             </div>
